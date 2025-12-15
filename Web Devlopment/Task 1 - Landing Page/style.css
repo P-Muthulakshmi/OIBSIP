@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #222;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: white;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px;
+    background: #f4f2ff;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 440px;
+    border-radius: 10px;
+}
+
+button {
+    background: #0a866b;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 40px;
+    background: #fff;
+}
+
+.feature-box {
+    width: 28%;
+    text-align: center;
+}
+
+.feature-box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+.about {
+    display: flex;
+    align-items: center;
+    padding: 80px 40px;
+    background: #fbf5f0;
+}
+
+.about-img img {
+    width: 480px;
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 50%;
+    margin-left: 40px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #111;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero, .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text, 
+    .about-text, 
+    .hero-img img, 
+    .about-img img {
+        width: 100%;
+    }
+
+    .features {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-box {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
